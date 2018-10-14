@@ -5,4 +5,4 @@ matching the description in spec/flower_spec.js.
 
 */
 
-var Flower = function() {}
+let Flower = function() {}
