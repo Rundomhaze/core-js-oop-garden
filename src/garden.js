@@ -5,4 +5,4 @@ the attributes and behaviors described in spec/garden_spec.js.
 
 */
 
-var garden = {}
+let garden = {}
