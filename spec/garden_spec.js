@@ -14,8 +14,8 @@ describe("the garden object", function() {
 
     describe("adding and removing flowers", function() {
       let daffodil = new Flower("daffodil", "yellow");
-      let iris     = new Flower("iris", "purple");
-      let aster    = new Flower("aster", "red");
+      let iris = new Flower("iris", "purple");
+      let aster = new Flower("aster", "red");
 
       beforeEach(function() {
         garden.flowers = [daffodil];
@@ -49,7 +49,7 @@ describe("the garden object", function() {
       it("filters flowers by color", function() {
         let yellowFlower1 = new Flower("daffodil", "yellow")
         let yellowFlower2 = new Flower("buttercup", "yellow")
-        let redFlower1    = new Flower("aster", "red")
+        let redFlower1 = new Flower("aster", "red")
 
         garden.flowers = [yellowFlower1, redFlower1, yellowFlower2];
         expect(garden.flowersByColor("yellow")).toHaveSameElementsAs([yellowFlower1, yellowFlower2]);
