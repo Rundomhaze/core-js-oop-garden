@@ -1,4 +1,5 @@
 describe("the garden object", function() {
+  let garden = new Garden();
   it("is named Kula Botanical Garden", function() {
     expect(garden.name).toEqual("Kula Botanical Garden");
   });
