@@ -1,3 +1,5 @@
+const Flower = require('../src/flower');
+
 describe("a flower", function() {
   let flower;
 
