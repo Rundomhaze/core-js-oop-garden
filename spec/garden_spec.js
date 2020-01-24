@@ -1,3 +1,6 @@
+const Flower = require('../src/flower');
+const garden = require('../src/garden');
+
 describe("the garden object", function() {
   it("is named Kula Botanical Garden", function() {
     expect(garden.name).toEqual("Kula Botanical Garden");
