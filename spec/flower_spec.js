@@ -1,12 +1,12 @@
-const Flower = require('../src/flower');
+const { Flower } = require('../src/flower');
 
-describe("a flower", function() {
+describe('a flower', function() {
   let flower;
 
   beforeEach(function() {
-    flower = new Flower("daffodil", "yellow");
+    flower = new Flower('daffodil', 'yellow');
   });
 
-  it("has a name");
-  it("has a color");
+  it('has a name');
+  it('has a color');
 });

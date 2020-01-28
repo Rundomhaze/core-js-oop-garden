@@ -5,6 +5,6 @@ the attributes and behaviors described in spec/garden_spec.js.
 
 */
 
-let garden = {}
+let garden = {};
 
-module.exports = garden;
+module.exports = { garden };

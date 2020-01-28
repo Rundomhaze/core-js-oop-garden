@@ -5,6 +5,6 @@ matching the description in spec/flower_spec.js.
 
 */
 
-let Flower = function() {}
+let Flower = function() {};
 
-module.exports = Flower;
+module.exports = { Flower };
