@@ -7,7 +7,7 @@ beforeEach(function(){
             return { pass: false };
           }
 
-          var unmatchedElements = expected.filter(function(expectedElement) {
+          let unmatchedElements = expected.filter(function(expectedElement) {
             return !actual.find(function(actualElement) {
               return expectedElement === actualElement;
             });
