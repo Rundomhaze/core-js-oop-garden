@@ -121,5 +121,6 @@ describe('a string with my name', function() {
 
 ---
 
-object literal syntax: http://www.dyn-web.com/tutorials/object-literal/
-Объектно-ориентировнный подход: https://developer.mozilla.org/enUS/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
+[object literal syntax](http://www.dyn-web.com/tutorials/object-literal/)
+
+[Объектно-ориентировнный подход](https://developer.mozilla.org/enUS/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
