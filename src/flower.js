@@ -1,6 +1,7 @@
+// Тебе пригодится класс Plant.
+// Не переживай, он уже доступен этому файлу.
+// Благодаря порядку подключения скриптов в файле `SpecRunner.html`.
+
 class Flower {
-  /* 
-    Write a constructor function that produces objects
-    matching the description in spec/flower_spec.js.
-  */
+// Код тут.
 }
