@@ -41,7 +41,7 @@ describe('the garden object', () => {
       it('can plant multiple flowers', () => {
         expect(garden.flowers).toEqual([daffodil]);
         garden.plant([iris, aster]);
-        expect(garden.flowers).toHaveSameElementsAs([daffodil, iris, aster]);
+        expect(garden.flowers).toContain([daffodil, iris, aster]);
       });
 
       it('can remove a flower', () => {
