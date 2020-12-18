@@ -28,7 +28,7 @@ let person = {
  fullName: function() {
    return this.firstName + ' ' + this.lastName;
  }
-}
+};
 person.firstName;
 // => 'Kweku'
 person.fullName();
@@ -48,10 +48,10 @@ person.fullName();
 let Person = function(firstName, lastName) {
  this.firstName = firstName;
  this.lastName = lastName;
-}
+};
 Person.prototype.fullName = function() {
  return this.firstName + ' ' + this.lastName
-}
+};
 let grayson = new Person('Grayson', 'Arthur');
 grayson.firstName;
 // => 'Grayson'
@@ -87,9 +87,9 @@ warner.fullName();
 
 
 
-### Тестирование Jasmine
-Для тестирования требуется использовать Jasmine [Jasmine][]. Напоминаем, основные методы, используемые в Jasmine: `describe()`, `it()`, `expect()`, и другие.
-Если хотите установить настройки перед каждым тестом, нужно использовать `beforeEach()` и/или `beforeAll()`. Когда вызываешь функцию `describe ()`, то передавай анонимную функцию, содержащую фактические тесты. На Рисунке 4 показан тест, написанный в Jasmine.
+### Тестирование Jest
+Для тестирования требуется использовать Jest. Напоминаем, основные методы, используемые в Jest: `describe()`, `test()`, `expect()`, и другие.
+Если хотите установить настройки перед каждым тестом, нужно использовать `beforeEach()` и/или `beforeAll()`. Когда вызываешь функцию `describe ()`, то передавай анонимную функцию, содержащую фактические тесты. На Рисунке 4 показан тест, написанный в Jest.
 
 ```js
 describe('a string with my name', function() {
@@ -97,13 +97,13 @@ describe('a string with my name', function() {
   beforeEach(function() {
     myName = 'Carson Hollands';
   });
-  it('is my name', function() {
+  test('is my name', function() {
     expect(myName).toEqual('Carson Hollands');
   });
 });
 ```
 
-*Рисунок 4.* Тестирование значения объекта строки JavaScript с помощью Jasmine.
+*Рисунок 4.* Тестирование значения объекта строки JavaScript с помощью Jest.
    
 ## Releases
 ### Pre-release: Проверка и выполнение тестов
@@ -118,7 +118,7 @@ describe('a string with my name', function() {
 Напиши тесты, демонстрирующие, что класс создает объекты с правильными именами и
 цветами(color). Затем напиши класс `Flower`, чтобы пройти
 собственные тесты.
-*Примечание:* Следуй примеру на Рисунке 4, чтобы написать тесты Jasmine.
+*Примечание:* Следуй примеру на Рисунке 4, чтобы написать тесты Jest.
 
 ### Release 1: Сад
 В `garden.js` есть класс `Garden`. Это будет твой сад. Добавь ему необходимые свойства и методы. Руководствуйся тестами при написании методов. Все тесты должны проходить.

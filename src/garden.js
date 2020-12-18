@@ -4,3 +4,5 @@ class Garden {
   the attributes and behaviors described in spec/garden_spec.js.
 */
 }
+
+module.exports = Garden;

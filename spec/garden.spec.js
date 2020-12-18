@@ -1,3 +1,6 @@
+const Garden = require('../src/garden');
+const Flower = require('../src/flower');
+
 describe('the garden object', () => {
   let garden;
 
@@ -5,16 +8,16 @@ describe('the garden object', () => {
     garden = new Garden('Kula Botanical Garden', 'Makawao', []);
   });
 
-  it('is named Kula Botanical Garden', () => {
+  test('is named Kula Botanical Garden', () => {
     expect(garden.name).toEqual('Kula Botanical Garden');
   });
 
-  it('is located in Makawao', () => {
+  test('is located in Makawao', () => {
     expect(garden.location).toEqual('Makawao');
   });
 
   describe('has a collection of flowers', () => {
-    it('has an empty collection of flowers', () => {
+    test('has an empty collection of flowers', () => {
       expect(garden.flowers).toEqual([]);
     });
 
@@ -32,19 +35,19 @@ describe('the garden object', () => {
       });
 
 
-      it('can add a flower to its flowers', () => {
+      test('can add a flower to its flowers', () => {
         expect(garden.flowers).toEqual([daffodil]);
         garden.addFlower(iris);
         expect(garden.flowers).toEqual([daffodil, iris]);
       });
 
-      it('can plant multiple flowers', () => {
+      test('can plant multiple flowers', () => {
         expect(garden.flowers).toEqual([daffodil]);
         garden.plant([iris, aster]);
         expect(garden.flowers).toContain(daffodil, iris, aster);
       });
 
-      it('can remove a flower', () => {
+      test('can remove a flower', () => {
         expect(garden.flowers).toEqual([daffodil]);
         garden.remove(daffodil);
         expect(garden.flowers).toEqual([]);
@@ -52,7 +55,7 @@ describe('the garden object', () => {
     });
 
     describe('filtering its flowers', () => {
-      it('filters flowers by color', () => {
+      test('filters flowers by color', () => {
         const yellowDaffodil = new Flower('daffodil', 'yellow');
         const yellowButtercup = new Flower('buttercup', 'yellow');
         const redAster = new Flower('aster', 'red');
@@ -63,7 +66,7 @@ describe('the garden object', () => {
           .toHaveSameElementsAs([yellowDaffodil, yellowButtercup]);
       });
 
-      it('filters flowers by name', () => {
+      test('filters flowers by name', () => {
         const irisLight = new Flower('iris', 'light-purple');
         const irisDark = new Flower('iris', 'dark-purple');
         const lavender = new Flower('lavender', 'purple');

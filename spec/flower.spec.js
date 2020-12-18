@@ -1,3 +1,6 @@
+const Flower = require('../src/flower');
+const Plant = require('../src/plant');
+
 describe('a flower', () => {
   let flower;
 
@@ -5,15 +8,15 @@ describe('a flower', () => {
     flower = new Flower('daffodil', 'yellow');
   });
 
-  it('has a name', () => {
+  test('has a name', () => {
     // Тут твой код.
   });
 
-  it('has a color', () => {
+  test('has a color', () => {
     // Тут твой код.
   });
 
-  it('flower is a plant', () => {
+  test('flower is a plant', () => {
     // Цветок является объектом.
     expect(flower).toBeInstanceOf(Object);
     // Цветок является растением.

@@ -3,3 +3,5 @@ class Plant {
     this.name = plantName;
   }
 }
+
+module.exports = Plant;
