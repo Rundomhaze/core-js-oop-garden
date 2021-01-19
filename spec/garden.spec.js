@@ -63,7 +63,7 @@ describe('the garden object', () => {
         garden.flowers = [yellowDaffodil, redAster, yellowButtercup];
 
         expect(garden.flowersByColor('yellow'))
-          .toHaveSameElementsAs([yellowDaffodil, yellowButtercup]);
+          .toEqual([yellowDaffodil, yellowButtercup]);
       });
 
       test('filters flowers by name', () => {
