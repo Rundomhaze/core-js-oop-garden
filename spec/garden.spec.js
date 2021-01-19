@@ -73,7 +73,10 @@ describe('the garden object', () => {
 
         garden.flowers = [lavender, irisLight, irisDark];
         expect(garden.flowersByName('iris'))
-          .toHaveSameElementsAs([irisLight, irisDark]);
+          .toContain(irisLight);
+        expect(garden.flowersByName('iris'))
+          .toContain(irisDark);
+        
       });
     });
   });
