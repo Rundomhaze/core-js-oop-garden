@@ -9,19 +9,19 @@ describe('a flower', () => {
   });
 
   test('has a name', () => {
-    // Тут твой код.
+    // Your code goes here.
   });
 
   test('has a color', () => {
-    // Тут твой код.
+    // Your code goes here.
   });
 
   test('flower is a plant', () => {
-    // Цветок является объектом.
+    // Flower is an object.
     expect(flower).toBeInstanceOf(Object);
-    // Цветок является растением.
+    // Flower is a plant.
     expect(flower).toBeInstanceOf(Plant);
-    // Цветок является цветком.
+    // Flower is a flower.
     expect(flower).toBeInstanceOf(Flower);
   });
 });
