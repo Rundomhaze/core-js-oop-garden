@@ -120,6 +120,6 @@ describe('a string with my name', function() {
 
 ---
 
-[object literal syntax](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Object_initializer)
+[Object literal syntax](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Object_initializer)
 
-[Объектно-ориентировнный подход](https://developer.mozilla.org/ru/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
+[Объектно-ориентировнный подход (en)](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript)
