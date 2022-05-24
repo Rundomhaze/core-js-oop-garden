@@ -4,8 +4,13 @@
 
 const Plant = require('../src/plant');
 
-class Flower {
-// Код тут.
+class Flower extends Plant {
+  constructor(name, color, plantName) {
+    super(plantName);
+    this.flowerName = name;
+    this.flowerColor = color;
+  }
+
 }
 
 module.exports = Flower;

@@ -9,11 +9,11 @@ describe('a flower', () => {
   });
 
   test('has a name', () => {
-    // Тут твой код.
+    expect(flower.flowerName).toEqual('daffodil');
   });
 
   test('has a color', () => {
-    // Тут твой код.
+    expect(flower.flowerColor).toEqual('yellow');
   });
 
   test('flower is a plant', () => {
